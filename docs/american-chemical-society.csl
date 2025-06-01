@@ -125,6 +125,7 @@
     <layout suffix=".">
       <text variable="citation-number" prefix="(" suffix=") "/>
       <text macro="author" suffix=" "/>
+      <text variable="title" suffix=". "/>
       <choose>
         <if type="article-journal review" match="any">
           <group delimiter=" ">
