@@ -3,18 +3,18 @@ title: ''
 bibliography: acstest.bib
 csl: "american-chemical-society.csl"
 output:
-  html_document:
+  pdf_document:
     toc: false
-    df_print: paged
+    latex_engine: pdflatex
+    citation_package: default
   bookdown::html_document2:
     toc: false
     number_sections: false
     highlight: tango
     mathjax: default
-  pdf_document:
+  html_document:
     toc: false
-    latex_engine: pdflatex
-    citation_package: default
+    df_print: paged
 link-citations: true
 ---
 
@@ -146,7 +146,7 @@ $$
 $$
 
 
-where [spkM]new represents concentration of the newly spiked or bioaccumulated spiked or bioaccumulated isotope tracers (i.e., ^65^Cu, ^62^Ni, ^113^Cd, and ^206^Pb); [spkM]ICP-MS and [refM]ICP-MS denote metal concentrations reported by the ICP-MS for the spiked and reference isotopes (i.e., ^63^Cu, ^60^Ni, ^111^Cd, and ^207^Pb), respectively; and f is the natural relative abundance of the spiked isotope (30.83% for ^65^Cu, 1.14% for ^61^Ni, 12.22% for ^113^Cd, and 24.1% for ^206^Pb). Metal concentrations in clam tissues were expressed on a dry weight basis. The internal standards (20  $\mu$g L^-1^ of ^72^Ge and ^103^Rh) were used to correct for instrument drift and matrix effects. A sample of standard reference material (SRM 2976, mussel tissue), digested using the same procedures as clam tissue samples, was analyzed after every 20 samples for quality control. Results were deemed acceptable if measured concentrations deviated by no more than 10% from certified values.   
+where [^spk^M]new represents concentration of the newly spiked or bioaccumulated spiked or bioaccumulated isotope tracers (i.e., ^65^Cu, ^62^Ni, ^113^Cd, and ^206^Pb); [^spk^M]ICP-MS and [^ref^M]ICP-MS denote metal concentrations reported by the ICP-MS for the spiked and reference isotopes (i.e., ^63^Cu, ^60^Ni, ^111^Cd, and ^207^Pb), respectively; and f is the natural relative abundance of the spiked isotope (30.83% for ^65^Cu, 1.14% for ^61^Ni, 12.22% for ^113^Cd, and 24.1% for ^206^Pb). Metal concentrations in clam tissues were expressed on a dry weight basis. The internal standards (20  $\mu$g L^-1^ of ^72^Ge and ^103^Rh) were used to correct for instrument drift and matrix effects. A sample of standard reference material (SRM 2976, mussel tissue), digested using the same procedures as clam tissue samples, was analyzed after every 20 samples for quality control. Results were deemed acceptable if measured concentrations deviated by no more than 10% from certified values.   
 
 ## 2.5 Toxicokinetic Modeling  
 
@@ -306,11 +306,11 @@ The chelation effects of algae-released DOM vary significantly across different 
 ## 3.3 Assimilation Efficiency of Diatom-Bound Metals by the Clams
 Assimilation efficiency (AE) was used to determine whether intracellular or adsorbed metals in diatom cells exhibit different bioavailability to clams. AE values varied between metals, with Pb (17%–32%) and Ni (38%–46%) exhibiting lower AEs than Cd (52%–79%) and Cu (59%–63%) (**Figure 4**a). Notably, AE values were similar regardless of whether the metals were adsorbed to the frustule or found intracellularly, except for Pb. Adsorbed Pb showed a significantly lower AE (17%) compared to whole-cell Pb (32%, **Figure 4**a). The AE of whole-cell metals were compared with those estimated from model fitting (**Table 2**). While numerical differences exist, both approaches show consistent ranking across metals.  
 
-**Table 2. Distribution coefficients (*K*<sub>d</sub>) of metals between diatoms and seawater, and assimilation efficiencies (*AE*) of diatom-bound metals in clams (*Ruditapes philippinarum*).**
+**Table 2. Distribution coefficients (*K*~d~) of metals between diatoms and seawater, and assimilation efficiencies (AE) of diatom-bound metals in clams (*Ruditapes philippinarum*).**
 
 <div style="font-size: 85%; border: 1px solid #ccc; padding: 1em;">
 
-| Metal | log *K*<sub>d</sub> (L kg^-1^) | AE (%)<sup>a</sup> | AE (%)<sup>b</sup> |
+| Metal | log *K*~d~ (L kg^-1^) | AE (%)^a^ | AE (%)^b^ |
 |:--------------|:--------------------------|:-------------------------|:-------------------------| 
 | Cu    | 4.04 ± 0.26                 | 89.8 ± 0.9           | 58.6 ± 5.2           |
 | Ni    | 2.87 ± 0.01                 | 15.3 ± 3.7           | 38.0 ± 9.1           |
@@ -319,9 +319,9 @@ Assimilation efficiency (AE) was used to determine whether intracellular or adso
 
 </div>
 
-<sub>Values are mean ± standard deviation. See Note S1 for the determination of *K*<sub>d</sub>.</sub>  
-<sub><sup>a</sup> AE determined using Equation 11 and model-fitted parameter values from **Table 1**, averaged across 2-day and 5-day diatom cultures.</sub>  
-<sub><sup>b</sup> AE determined from direct measurements using whole-cell diatoms (see Section 2.3).</sub>  
+<sub>Values are mean ± standard deviation. See Note S1 for the determination of *K*~d~.</sub>  
+<sub>^a^ AE determined using Equation 11 and model-fitted parameter values from **Table 1**, averaged across 2-day and 5-day diatom cultures.</sub>  
+<sub>^b^ AE determined from direct measurements using whole-cell diatoms (see Section 2.3).</sub>  
 
 
 
