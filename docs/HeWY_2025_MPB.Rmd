@@ -1,20 +1,20 @@
 ---
-title: ''
+title: ' '
 bibliography: reference.bib
 csl: "american-chemical-society.csl"
 output:
-  pdf_document:
+  html_document:
     toc: false
-    latex_engine: xelatex
-    citation_package: default
+    df_print: paged
   bookdown::html_document2:
     toc: false
     number_sections: false
     highlight: tango
     mathjax: default
-  html_document:
+  pdf_document:
     toc: false
-    df_print: paged
+    latex_engine: xelatex
+    citation_package: default
 link-citations: true
 ---
 
@@ -102,8 +102,6 @@ To minimize metal contamination, all plastic containers were soaked overnight in
 ## 2.2 Effect of Diatom Growth on Metal Bioaccumulation in the Clams  
 
 Metal bioaccumulation in the clams were determined in seawater both with or without the diatom growth to examine the effects of algal activity on metal bioavailability. Two key mechanisms were investigated: (1) the preconcentration of dissolved metals into algal cells, and (2) alterations in water chemistry due to diatom physiological activity.   
-
-
 
 
 ```{r fig1, echo=FALSE, out.width="60%", fig.align='center'}
@@ -228,7 +226,7 @@ The Risk Ratio (RR) quantifies the relative risk of metal bioaccumulation in cla
 $$
 \mathrm{RR} = \frac{k_{\mathrm{u}} + \mathrm{IR} \cdot \mathrm{AE} \cdot K_{\mathrm{d}}}{k_{\mathrm{u}}^{0} \cdot \left(1 + K_{\mathrm{d}} \cdot [\text{Algae}] \right)} \tag{13}
 $$
-where *k*~u~^0^ (L g^-1^ d^-1^) is the metal uptake rate constant of clams in clear water, and *k*~u~ (L g^-1^ d^-1^) is the corresponding uptake rate constant in algal-containing water. It should be noted that both *k*~u~ and *k*~u~^0^ are apparent values, determined by organism physiology and influenced by water chemistry. RR is a modification of the modifying factor (MF) introduced in Qian et al.@Qian2024 and Cao et al.@Cao2023. While MF was developed to adjust water quality criteria for turbid waters, assuming equal *C*~w~ in particle-containing and particle-free waters, RR is designed to compare bioaccumulation risk under equal pollutant loadings, where *C*~w~ may differ between the two systems. For a detailed derivation of the RR, refer to Note S2.  
+where *k*~u~^0^ (L g^-1^ d^-1^) is the metal uptake rate constant of clams in clear water, and *k*~u~ (L g^-1^ d^-1^) is the corresponding uptake rate constant in algal-containing water. It should be noted that both *k*~u~ and *k*~u~^0^ are apparent values, determined by organism physiology and influenced by water chemistry. RR is a modification of the modifying factor (MF) introduced in Qian et al. @Qian2024 and Cao et al. @Cao2023. While MF was developed to adjust water quality criteria for turbid waters, assuming equal *C*~w~ in particle-containing and particle-free waters, RR is designed to compare bioaccumulation risk under equal pollutant loadings, where *C*~w~ may differ between the two systems. For a detailed derivation of the RR, refer to Note S2.  
 
 
 A Monte Carlo simulation was employed to calculate RC~p~ and RR. Model parameters used in the simulation were taken from **Table 1**, averaged across the 2-d and 5-d treatments. Specifically, 10,000 values for *k*~u~,  *k*~ig~ ,  *k*~eg~ , *k*~as~ were generated based on model-fitted means and standard deviations assuming a non-negative normal distribution. The [Algae] level was set to the average concentration used in the toxicokinetic experiment, as ingestion rates under different field-level algal concentrations remain uncertain. This warrants exploration of a broader range of algal densities in future work. *K*~d~ values were derived from the *C*~p~ and *C*~w~ values obtained in the toxicokinetic experiment (**Table 2**). Using these inputs, 10,000 values of RC~p~ and RR were simulated, and their means and standard deviations were subsequently calculated. 
