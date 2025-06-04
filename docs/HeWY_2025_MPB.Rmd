@@ -3,18 +3,18 @@ title: ' '
 bibliography: reference.bib
 csl: "american-chemical-society.csl"
 output:
-  html_document:
+  pdf_document:
     toc: false
-    df_print: paged
+    latex_engine: xelatex
+    citation_package: default
   bookdown::html_document2:
     toc: false
     number_sections: false
     highlight: tango
     mathjax: default
-  pdf_document:
+  html_document:
     toc: false
-    latex_engine: xelatex
-    citation_package: default
+    df_print: paged
 link-citations: true
 ---
 
@@ -94,8 +94,8 @@ In this study, we address one critical question regarding how the presence of al
 
 # 2. Materials and Methods
 
-## 2.1. Seawater, Clams, and Diatoms  
-Seawater was collected from Haicang, Xiamen, China (24.4947°N, 118.0645°E), with a salinity of approximately 30 and a pH of around 8.0. The seawater was filtered through a 0.22- $\mu$m mixed cellulose membrane before being used in all experiments, including diatom culture and clam exposure. The clams *R. philippinarum* were collected from the intertidal zone of Jimei, Xiamen, China (24.4381°N, 118.1614°E), and acclimated to the laboratory conditions at a salinity of 30 for over two weeks. Seawater and clams were collected from nearby but different locations, as water sampling at the intertidal mudflat site used for clam collection was not feasible. During acclimation, the clams were fed Chlorella sp. (green algae) daily. Prior to the experiment, clams were size-selected (shell length: 23 ± 2 mm) and evenly distributed among treatments. The diatom Thalassiosira weissflogii was cultured in f/2 medium at a salinity of 30 and under a light intensity of 4800 lux. The f/2 medium was prepared using filtered natural seawater sterilized by microwave treatment  @Keller1988, with nutrient amendments (**Table S1**) added after 0.22- $\mu$m filtration. Once the culture reached the logarithmic phase (~5 × 10^4^ cells mL^-1^), it was transferred to fresh medium.   
+## 2.1 Seawater, Clams, and Diatoms  
+Seawater was collected from Haicang, Xiamen, China (24.4947°N, 118.0645°E), with a salinity of approximately 30 and a pH of around 8.0. The seawater was filtered through a 0.22- $\mu$m mixed cellulose membrane before being used in all experiments, including diatom culture and clam exposure. The clams *R. philippinarum* were collected from the intertidal zone of Jimei, Xiamen, China (24.4381°N, 118.1614°E), and acclimated to the laboratory conditions at a salinity of 30 for over two weeks. Seawater and clams were collected from nearby but different locations, as water sampling at the intertidal mudflat site used for clam collection was not feasible. During acclimation, the clams were fed Chlorella sp. (green algae) daily. Prior to the experiment, clams were size-selected (shell length: 23 ± 2 mm) and evenly distributed among treatments. The diatom *Thalassiosira weissflogii* was cultured in f/2 medium at a salinity of 30 and under a light intensity of 4800 lux. The f/2 medium was prepared using filtered natural seawater sterilized by microwave treatment  @Keller1988, with nutrient amendments (**Table S1**) added after 0.22- $\mu$m filtration. Once the culture reached the logarithmic phase (~5 × 10^4^ cells mL^-1^), it was transferred to fresh medium.   
 
 To minimize metal contamination, all plastic containers were soaked overnight in 5% HNO~3~ and thoroughly rinsed with reverse osmosis and deionized water prior to use. All experiments were conducted at salinity 30, under a 14 h light: 10 h dark cycle, and at a temperature of 21 ± 2°C, which represents the annual mean temperature of Chinese coastal seawater.  
 
